@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mainstyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Data Display</title>
+    <link rel="icon" type="image/png" href="title_logo.png"/>
+</head>
+<body>
+    <div class="header_shape">
+        <h1 class="header"><b>Panda Cricket</b></h1>
+        <div class="topnav">
+            <a id="home" class="active" href="main.html" target="_blank">Home</a>
+            <a id="about", href="About.html" target="_blank">About</a>
+            <a id="contact" href="Contact.html" target="_blank">Contact</a>
+              
+            <!-- <input type="text", id="searchInput", placeholder="Search team name.."> -->
+            <!-- <button onclick="performSearch()">Search</button> -->
+            <div id="searchResults">
+            </div>
+        </div>
+    </div>
+     
+    <div class="main-content">
+        <p>Get updated with all the cricket-related updates!</p>
+        <div id="loadingIndicator">Loading...</div>
+        <div id="dataContent" style="display: none;">
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" style="cursor:pointer;">&times;</span>
+          <table id="dataTable"></table>
+        </div>
+    </div>
+    <hr>
+    
+   
+    <script src="app.js"></script>
+   
+</body>
+ 
+
+</html>
